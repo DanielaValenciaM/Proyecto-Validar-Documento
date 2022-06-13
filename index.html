@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Prueba Técnica" content="Validación de documento" />
+    <meta name="robots" content="index,follow">
+    <title>Prueba Técnica - Validación de documento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <body background="fondoemp2.jpg">
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <h1 style="text-align:center">PRUEBA TÉCNICA</h1><br>
+        <h2 style="text-align:center">Validación de documento</h2>
+        <p>Está página fue diseñada para validar documentos de identidad.</p><br>
+            <p>
+                Ingresa el número del documento de identidad
+                <input type = "text" id="documento"/><br><br><br>
+
+                <label for="tipo-doc">Tipo de documento</label>
+                
+                <select name="tipodoc" id="tipodoc">
+                    <option value="">--Please choose an option--></option>
+                    <option value="cedula de ciudadania">Cedula de ciudadania</option>
+                    <option value="cedula de extranjeria">Cedula de extranjeria</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="licencia de conduccion">Licencia de conducción</option>
+                </select><br><br>
+
+                <label for="pais-doc">Pais del documento</label>
+
+                <select name="paisdoc" id="paisdoc">
+                    <option value="">--Please choose an option--></option>
+                    <option value="co">Colombia</option>
+                    <option value="cl">Chile</option>
+                    <option value="mx">Mexico</option>
+                    <option value="br">Brasil</option>
+                    <option value="pe">peru</option>
+                </select><br><br><br>
+
+                Foto del lado frontal de su documento:<br><br>
+                <input type="file" name="frontal" id="frontal"><br><br><br>
+                
+                Foto del reverso de su documento:<br><br>
+                <input type="file" name="posterior" id="posterior"><br><br><br>
+
+             <button id="btnvalidar">validar</button>
+             <script src="./main.js"></script>
+            </p>
+          </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
